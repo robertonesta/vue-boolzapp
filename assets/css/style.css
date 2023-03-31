@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 
-.bg{
+body{
     height: 100vh;
     background: linear-gradient(
         to bottom,
         #009688 15%,
         #d2dbda 15%
     );
+}
+
+.container{
+    height: 95vh;
+    margin: auto;
+    border: 1px solid;   
+}
+
+.header_left, .header_right{
+    height: 70px;
+    border: 1px solid grey;
+    background-color: #eaeaea;
 }
