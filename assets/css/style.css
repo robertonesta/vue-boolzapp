@@ -58,7 +58,7 @@ body{
 }
 .chat{
     overflow-y: auto;
-    background-color: bisque;
+    background-color: white;
 }
 .icon{
     border-radius: 50%;
@@ -70,24 +70,28 @@ body{
     color: #8edafc;
 }
 .users{
+    height: 497px;
     overflow-y: auto;
 }
-.fa-magnifying-glass{
+.fa-magnifying-glass, .fa-face-smile, .fa-microphone{
     color: grey;
 }
-#search{
+#search, .footer{
     background-color: rgb(234, 234, 234);
 }
 .search_bar{
     border: 1px solid rgb(199, 197, 197);
 }
 
-.chat{
+.main_right{
     background-image: url(../img/mine.jpg);
 }
 .chat_user img{
     border-radius: 50%;
     max-width: 100%;
     width: 40px;
+}
+.footer{
+    height: 55px;
 }
 
