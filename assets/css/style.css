@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #009688 15%,
+        #d2dbda 15%
+    );
+}
