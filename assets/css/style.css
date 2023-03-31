@@ -16,6 +16,12 @@ body{
 .container{
     height: 95vh;
     margin: auto;
+    border: 1px solid grey;   
+}
+
+.container{
+    height: 95vh;
+    margin: auto;
     border: 1px solid;   
 }
 
@@ -23,4 +29,8 @@ body{
     height: 70px;
     border: 1px solid grey;
     background-color: #eaeaea;
+}
+
+.header_left_left img{
+    border-radius: 50%;
 }
