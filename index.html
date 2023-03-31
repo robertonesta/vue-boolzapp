@@ -50,12 +50,12 @@
                     </div>
                 </div>
                 <div class="sidebar_main">
-                    <div id="search" class="p-3">
+                    <div id="search" class="p-1">
                         <div class="d-flex search_bar">
                             <label class="d-flex justify-content-center align-items-center bg-white px-4 py-2 icon_color" for="search_contact_input">
-                              <i class="fa-solid fa-magnifying-glass fsa-fw"></i>
+                              <i class="fa-solid fa-magnifying-glass fsa-fw border-1"></i>
                             </label>
-                            <input class="flex-grow-1 border-0 p-2" type="text" id="search_contact_input" placeholder="Cerca o inizia una nuova chat">
+                            <input class="flex-grow-1 border-1 p-2" type="text" id="search_contact_input" placeholder="Cerca o inizia una nuova chat">
                         </div>
 
                     </div>
@@ -75,7 +75,19 @@
                 </div>
             </div>
             <div class="main_right px-0 col-8 position-relative">
-                <div class="chat"></div>
+                <div class="chat px-5 py-3 d-flex flex-column-reverse flex-shrink-0">
+                    <div class="message">
+                        <div class="d-flex justify-content-between">
+                            <span class="text">ciao</span>
+                            <div class="right_message_section d-flex flex-column justify-content-between align-self-stretch">
+                                <span class="text-end">
+                                    <i class="fa-solid fa-angle-down fa-lg icon_color text-end"></i>
+                                </span>
+                                <span class="icon_color text-end align-self-end">ciao</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 <div class="footer position-absolute d-flex justify-content-around align-items-center px-3">
                     <i class="fa-regular fa-face-smile icon_color_dark fa-lg mx-3"></i>
                     <input type="text" class="form-control border-0 grey_text mx-3" name="newmessage" placeholder="Scrivi un messaggio">

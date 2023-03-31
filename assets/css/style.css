@@ -57,8 +57,10 @@ body{
     background-color: beige;
 }
 .chat{
+    height: calc(100% - 55px);
+    background-image: url(../img/mine.jpg);
     overflow-y: auto;
-    background-color: white;
+
 }
 .icon{
     border-radius: 50%;
@@ -70,7 +72,7 @@ body{
     color: #8edafc;
 }
 .users{
-    height: 497px;
+    height: 515px;
     overflow-y: auto;
 }
 .fa-magnifying-glass, .fa-face-smile, .fa-microphone{
@@ -83,9 +85,6 @@ body{
     border: 1px solid rgb(199, 197, 197);
 }
 
-.main_right{
-    background-image: url(../img/mine.jpg);
-}
 .chat_user img{
     border-radius: 50%;
     max-width: 100%;
