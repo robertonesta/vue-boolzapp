@@ -53,7 +53,7 @@ body{
 }
 .sidebar_top{
     height: 60px;
-    background-color: aqua;
+    background-color: #8edafc;
 }
 .sidebar_main{
     height: calc(95vh - 117px);
