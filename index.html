@@ -39,7 +39,7 @@
             </div>           
         </header>
         <div class="d-flex main row">
-            <div class="col-4 sidebar d-flex flex-column">
+            <div class="col-4 sidebar d-flex flex-column px-0">
                 <div class="sidebar_top d-flex align-items-center px-3">
                     <div class="icon d-flex align-items-center justify-content-center">
                         <i class="fas fa-bell-slash fa-xl"></i>
@@ -49,7 +49,23 @@
                         <span><u>Attiva notifiche desktop</u></span>
                     </div>
                 </div>
-                <div class="sidebar_main"></div>
+                <div class="sidebar_main">
+                    <div id="search" class="p-3">
+                        <div class="d-flex search_bar">
+                            <label class="d-flex justify-content-center align-items-center bg-white px-4 py-2 icon_color" for="search_contact_input">
+                              <i class="fa-solid fa-magnifying-glass fsa-fw"></i>
+                            </label>
+                            <input class="flex-grow-1 border-0 p-2" type="text" id="search_contact_input" placeholder="Cerca o inizia una nuova chat">
+                        </div>
+
+                    </div>
+                    <div class="users">
+                        <ul>
+                            <li>                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div id="chat col-8">
             </div>            
