@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 0.9rem;
 }
 
 body{
@@ -21,7 +22,6 @@ body{
 
 
 .header_left, .header_right{
-    height: 100%;
     border: 1px solid grey;
     background-color: #eaeaea;
 }
@@ -29,9 +29,13 @@ body{
 .header_left_left img{
     border-radius: 50%;
     max-width: 100%;
-    width: 50px;
+    width: 40px;
 }
 
 .header_left_icons i{
     padding: 0 0.5rem;
+    color: grey;
+}
+.grey_text{
+    color:grey;
 }
