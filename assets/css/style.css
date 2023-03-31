@@ -41,10 +41,6 @@ body{
     color:grey;
 }
 
-.notifications{
-    background-color: #8edafc;
-}
-
 .main{
     height: calc(100% - 55px); 
 }
@@ -55,6 +51,7 @@ body{
     height: 60px;
     background-color: #8edafc;
 }
+
 .sidebar_main{
     height: calc(95vh - 117px);
     background-color: beige;
@@ -62,4 +59,13 @@ body{
 .chat{
     overflow-y: auto;
     background-color: bisque;
+}
+.icon{
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+.fa-bell-slash{
+    color: #8edafc;
 }
