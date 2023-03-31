@@ -15,13 +15,13 @@ body{
 }
 
 .container{
-    height: 95vh;
     margin: auto;
     border: 1px solid grey;   
 }
 
 
 .header_left, .header_right{
+    height: 55px;
     border: 1px solid grey;
     background-color: #eaeaea;
 }
@@ -38,4 +38,24 @@ body{
 }
 .grey_text{
     color:grey;
+}
+
+.notifications{
+    background-color: #8edafc;
+}
+
+main{
+    height: calc(95vh - 55px);   
+}
+.sidebar{
+    width: 330px;
+    overflow-y: hidden;
+}
+.sidebar_top{
+    height: 60px;
+    background-color: aqua;
+}
+.sidebar_main{
+    height: calc(100% - 60px);
+    background-color: beige;
 }
