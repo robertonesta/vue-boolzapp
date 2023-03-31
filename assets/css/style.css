@@ -69,7 +69,7 @@ body{
 .fa-bell-slash{
     color: #8edafc;
 }
-.users ul{
+.users{
     overflow-y: auto;
 }
 .fa-magnifying-glass{
@@ -85,3 +85,9 @@ body{
 .chat{
     background-image: url(../img/mine.jpg);
 }
+.chat_user img{
+    border-radius: 50%;
+    max-width: 100%;
+    width: 40px;
+}
+
