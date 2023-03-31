@@ -15,6 +15,7 @@ body{
 }
 
 .container{
+    height: 95vh;
     margin: auto;
     border: 1px solid grey;   
 }
@@ -44,11 +45,10 @@ body{
     background-color: #8edafc;
 }
 
-main{
-    height: calc(95vh - 55px);   
+.main{
+    height: calc(100% - 55px); 
 }
 .sidebar{
-    width: 330px;
     overflow-y: hidden;
 }
 .sidebar_top{
@@ -56,6 +56,10 @@ main{
     background-color: aqua;
 }
 .sidebar_main{
-    height: calc(100% - 60px);
+    height: calc(95vh - 117px);
     background-color: beige;
+}
+.chat{
+    overflow-y: auto;
+    background-color: bisque;
 }
