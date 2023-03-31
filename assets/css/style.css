@@ -19,18 +19,19 @@ body{
     border: 1px solid grey;   
 }
 
-.container{
-    height: 95vh;
-    margin: auto;
-    border: 1px solid;   
-}
 
 .header_left, .header_right{
-    height: 70px;
+    height: 100%;
     border: 1px solid grey;
     background-color: #eaeaea;
 }
 
 .header_left_left img{
     border-radius: 50%;
+    max-width: 100%;
+    width: 50px;
+}
+
+.header_left_icons i{
+    padding: 0 0.5rem;
 }
