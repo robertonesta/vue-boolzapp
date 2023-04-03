@@ -171,7 +171,8 @@ createApp({
                     ],
                 }
             ],
-            newMessage: ""
+            newMessage: "",
+            nameFilter: "",
         }
     },
     methods: {
@@ -201,6 +202,18 @@ createApp({
             setTimeout (() =>{
                 this.contacts[this.activeContact].messages.push(newMessage);
               }, 3000)
+        },
+        
+    },
+    computed: {
+        searchList() {
+            this.contacts.forEach (contact => {
+                if(contact.name.includes(this.nameFilter)){
+                    contact.visible = true
+                } else {
+                    contact.visible = false
+                }
+            })
         }
     }
 }).mount('#app')

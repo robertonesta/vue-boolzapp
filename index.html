@@ -53,21 +53,21 @@
                     <div id="search" class="p-1">
                         <div class="d-flex search_bar">
                             <label class="d-flex justify-content-center align-items-center bg-white px-4 py-2 icon_color" for="search_contact_input">
-                              <i class="fa-solid fa-magnifying-glass fsa-fw border-1"></i>
+                              <i class="fa-solid fa-magnifying-glass fsa-fw border-1" @click="searchList"></i>
                             </label>
-                            <input class="flex-grow-1 border-1 p-2" type="text" id="search_contact_input" placeholder="Cerca o inizia una nuova chat">
+                            <input class="flex-grow-1 border-1 p-2" type="text" v-model="nameFilter" id="search_contact_input" placeholder="Cerca o inizia una nuova chat" >
                         </div>
 
                     </div>
                     <div class="users">
                         <ul class="list-unstyled">
                             <li>
-                                <div @click="chatUserClick(index)" class="chat_user p-3 d-flex align-items-center" :class="index === activeContact ? 'active' : ''" v-for="(contact, index) in contacts">
+                                <div  v-show="contact.visible" @click="chatUserClick(index)" v-for="(contact, index) in contacts" :class="index === activeContact ? 'active' : ''" class="chat_user p-3 align-items-center">
                                     <img :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
                                     <div class="mx-2 d-flex flex-column">
                                         <div class="text">{{contact.name}}</div>
                                         <span class="grey_text">Ultimo messaggio inviato</span>
-                                    </div>                    
+                                    </div>                   
                                 </div>                                
                             </li>
                         </ul>

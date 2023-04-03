@@ -86,6 +86,10 @@ body{
 .search_bar{
     border: 1px solid rgb(199, 197, 197);
 }
+
+.chat_user{
+    display: flex;
+}
 .chat_user img{
     border-radius: 50%;
     max-width: 100%;
