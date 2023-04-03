@@ -90,6 +90,14 @@ body{
     max-width: 100%;
     width: 40px;
 }
+
+.message{
+    flex-basis: 62px;
+    flex-shrink: 0;
+    padding: 6px 5%
+}
+
+
 .footer{
     height: 55px;
     bottom: 0%;
