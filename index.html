@@ -14,8 +14,8 @@
         <header class="row d-flex">
             <div class="col-4 py-2 header_left d-flex justify-content-between ">
                 <div class="header_left_left d-flex align-items-center">
-                    <img src="./assets/img/avatar_io.jpg" alt="">
-                    <span class="mx-2">Sofia</span>
+                    <img :src="`./assets/img/avatar${me.avatar}.jpg`" alt="">
+                    <div class="name mx-2">{{me.name}}</div>
                 </div>
                 <div class="header_left_icons d-flex justify-content-around align-items-center">
                     <i class="fas fa-circle-notch fa-lg"></i>

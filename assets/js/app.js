@@ -5,7 +5,7 @@ createApp({
         return {
             me: {
                 avatar: '_io',
-                nome: 'Sofia'
+                name: 'Sofia'
             },
             activeContact: 0,
             contacts: [
