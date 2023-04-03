@@ -170,31 +170,37 @@ createApp({
                         }
                     ],
                 }
-            ]
+            ],
+            newMessage: ""
         }
     },
     methods: {
         chatUserClick(index){
             this.activeContact = index
         },
-        addMessage(index){
+        addMessage(){
+            let currentDate = new Date()
+            console.log(currentDate.getDate(), currentDate.getMonth(), currentDate.getFullYear(), currentDate.getHours(), currentDate.getMinutes(), currentDate.getSeconds())
+
             let newMessage = {
-                date: this.dateNow,
+                date: `${currentDate.getDate()}/${currentDate.getMonth()}/${currentDate.getFullYear()} ${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`,
                 message: this.newMessage,
                 status: 'sent'
             }
-            this.contacts[index].messages.push(newMessage);
+            this.contacts[this.activeContact].messages.push(newMessage);
             this.newMessage = ''
         },
-        automaticAnswer(index){
+        automaticAnswer(){
+            let currentDate = new Date()
+            console.log(currentDate.getDate(), currentDate.getMonth(), currentDate.getFullYear(), currentDate.getHours(), currentDate.getMinutes(), currentDate.getSeconds())
             let newMessage = {
-                date: this.dateNow,
+                date: `${currentDate.getDate()}/${currentDate.getMonth()}/${currentDate.getFullYear()} ${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`,
                 message: 'D\'accordo',
                 status: 'received'
             }
             setTimeout (() =>{
-                this.contacts[index].messages.push(newMessage);
-              }, 1000)
+                this.contacts[this.activeContact].messages.push(newMessage);
+              }, 3000)
         }
     }
 }).mount('#app')
