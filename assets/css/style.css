@@ -56,7 +56,7 @@ body{
     height: calc(95vh - 117px);
     background-color: beige;
 }
-.chat{
+.messages{
     height: calc(100% - 55px);
     background-image: url(../img/mine.jpg);
     overflow-y: auto;
@@ -90,13 +90,20 @@ body{
     max-width: 100%;
     width: 40px;
 }
-
-.message{
-    flex-basis: 62px;
-    flex-shrink: 0;
-    padding: 6px 5%
+.sent, .received{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    max-width: 200px;
 }
-
+.sent{
+    align-self: flex-end;
+    background-color: #d5f9ba;
+}
+.received{
+    align-self: flex-start;
+    background-color: white;
+}
 
 .footer{
     height: 55px;
