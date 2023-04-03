@@ -111,7 +111,7 @@ createApp({
                 },
                 {
                     name: 'Claudia',
-                    avatar: '_5',
+                    avatar: '_6',
                     visible: true,
                     messages: [
                         {
@@ -171,6 +171,11 @@ createApp({
                     ],
                 }
             ]
+        }
+    },
+    methods: {
+        chatUserClick(index){
+            this.activeContact = index
         }
     }
 }).mount('#app')

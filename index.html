@@ -62,7 +62,7 @@
                     <div class="users">
                         <ul class="list-unstyled">
                             <li>
-                                <div class="chat_user p-3 d-flex align-items-center" :class="index === activeContact ? 'active' : ''" v-for="(contact, index) in contacts">
+                                <div @click="chatUserClick(index)" class="chat_user p-3 d-flex align-items-center" :class="index === activeContact ? 'active' : ''" v-for="(contact, index) in contacts">
                                     <img :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
                                     <div class="mx-2 d-flex flex-column">
                                         <div class="text">{{contact.name}}</div>
