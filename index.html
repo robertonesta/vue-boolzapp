@@ -76,11 +76,9 @@
             </div>
             <div class="main_right px-0 col-8 position-relative">
                 <div class="messages px-5 py-3 d-flex flex-column">
-                    <div class="message" v-for="message in contacts[activeContact].messages">
-                        <div :class="message.status">
-                            <div class="message">{{message.message}}</div>
-                            <div class="date">{{message.date}}</div>
-                        </div>
+                    <div class="message" :class="message.status" v-for="message in contacts[activeContact].messages">
+                        <div class="message">{{message.message}}</div>
+                        <div class="date d-flex justify-content-end">{{message.date}}</div>                          
                     </div>
                 </div>
 

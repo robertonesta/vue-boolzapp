@@ -106,6 +106,10 @@ body{
     background-color: white;
 }
 
+.date{
+    color: grey;
+}
+
 .users div:not(:not(.active)){
     background-color: rgba(128, 128, 128, 0.181);
 
