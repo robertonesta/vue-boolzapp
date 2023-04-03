@@ -25,9 +25,9 @@
             </div>
             <div class="col-8 py-2 header_left d-flex justify-content-between ">
                 <div class="header_left_left d-flex align-items-center">
-                    <img src="./assets/img/avatar_1.jpg" alt="">
+                    <img :src="`./assets/img/avatar${contacts[activeContact].avatar}.jpg`" alt="">
                     <div class="mx-2 d-flex flex-column">
-                        <span>Michele</span>
+                        <span>{{contacts[activeContact].name}}</span>
                         <span class="grey_text">Ultimo accesso alle:</span>
                     </div>                    
                 </div>
@@ -75,10 +75,7 @@
                 </div>
             </div>
             <div class="main_right px-0 col-8 position-relative">
-                <div class="messages px-5 py-3 d-flex flex-column">
-                    <div class="sent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod repudiandae nesciunt, nulla amet voluptatum dolor. Nulla recusandae earum dicta quia deserunt facilis aliquid aspernatur exercitationem, ipsum temporibus repudiandae ad perferendis!</div>
-                    <div class="sent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod repudiandae nesciunt, nulla amet voluptatum dolor. Nulla recusandae earum dicta quia deserunt facilis aliquid aspernatur exercitationem, ipsum temporibus repudiandae ad perferendis!</div>
-                    <div class="received">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit incidunt a omnis impedit ipsam nemo repellat eos voluptatibus ab cumque nostrum, ratione dolorum tenetur reprehenderit? Odit voluptatum reiciendis deleniti?</div>
+                <div class="messages px-5 py-3 d-flex flex-column"> 
                 </div>
 
 
