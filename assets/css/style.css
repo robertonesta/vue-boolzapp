@@ -17,14 +17,17 @@ body{
 .container{
     height: 95vh;
     margin: auto;
-    border: 1px solid grey;   
+       
 }
 
 
 .header_left, .header_right{
-    height: 55px;
-    border: 1px solid grey;
+    height: 55px;    
     background-color: #eaeaea;
+}
+
+.header_left{
+    border-right: 1px solid rgb(190, 190, 190);
 }
 
 .header_left_left img{

@@ -176,7 +176,25 @@ createApp({
     methods: {
         chatUserClick(index){
             this.activeContact = index
+        },
+        addMessage(index){
+            let newMessage = {
+                date: this.dateNow,
+                message: this.newMessage,
+                status: 'sent'
+            }
+            this.contacts[index].messages.push(newMessage);
+            this.newMessage = ''
+        },
+        automaticAnswer(index){
+            let newMessage = {
+                date: this.dateNow,
+                message: 'D\'accordo',
+                status: 'received'
+            }
+            setTimeout (() =>{
+                this.contacts[index].messages.push(newMessage);
+              }, 1000)
         }
     }
-
 }).mount('#app')

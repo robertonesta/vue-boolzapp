@@ -87,7 +87,7 @@
 
                 <div class="footer position-absolute d-flex justify-content-around align-items-center px-3">
                     <i class="fa-regular fa-face-smile icon_color_dark fa-lg mx-3"></i>
-                    <input type="text" class="form-control border-0 grey_text mx-3" name="newmessage" placeholder="Scrivi un messaggio">
+                    <input type="text" class="form-control border-0 grey_text mx-3" name="newmessage" placeholder="Scrivi un messaggio" v-model.trim="newMessage" @keyup.enter="addMessage(index), automaticAnswer(index)">
                     <i class="fa-solid fa-microphone icon_color_dark fa-lg mx-3"></i>
                 </div>
             </div>            
