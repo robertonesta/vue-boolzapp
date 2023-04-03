@@ -62,10 +62,10 @@
                     <div class="users">
                         <ul class="list-unstyled">
                             <li>
-                                <div class="chat_user p-3 d-flex align-items-center">
-                                    <img src="./assets/img/avatar_1.jpg" alt="">
+                                <div class="chat_user p-3 d-flex align-items-center" :class="index === activeContact ? 'active' : ''" v-for="(contact, index) in contacts">
+                                    <img :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
                                     <div class="mx-2 d-flex flex-column">
-                                        <span>Michele</span>
+                                        <div class="text">{{contact.name}}</div>
                                         <span class="grey_text">Ultimo messaggio inviato</span>
                                     </div>                    
                                 </div>                                
