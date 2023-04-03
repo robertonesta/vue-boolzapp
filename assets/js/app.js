@@ -178,4 +178,5 @@ createApp({
             this.activeContact = index
         }
     }
+
 }).mount('#app')
