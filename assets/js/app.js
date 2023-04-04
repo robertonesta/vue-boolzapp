@@ -209,7 +209,16 @@ createApp({
         },
         deleteMessage(index){            
             this.contacts[this.activeContact].messages.splice(index, 1)
+        },
+        lastMessage(contact) {
+
+            if (contact.messages.length > 0) {
+                return (contact.messages[contact.messages.length - 1].message)
+            } else {
+                return ('Chat vuota');
+            }
         }
+
                 
     },
     computed: {

@@ -66,7 +66,7 @@
                                     <img :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
                                     <div class="mx-2 d-flex flex-column">
                                         <div class="text">{{contact.name}}</div>
-                                        <span class="grey_text">Ultimo messaggio inviato</span>
+                                        <span class="grey_text">{{lastMessage(contact)}}</span>
                                     </div>                   
                                 </div>                                
                             </li>
