@@ -77,19 +77,21 @@
             <div class="main_right px-0 col-8 position-relative">
                 <div class="messages px-5 py-3 d-flex flex-column">
                     <div class="message" :class="message.status" v-for="message in contacts[activeContact].messages" @click="dropDown_Menu">
-                        <div class="dropdown_menu">
-                            <div class="dropdown">
-                                <button class="border-0 " v-show="dropdownMenu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Message info</a></li>
-                                    <li><a class="dropdown-item" href="#">Delete message</a></li>
-                                  </ul>
+                        <div class="position-relative">
+                            <div class="dropdown_menu position-absolute">
+                                <div class="dropdown">
+                                    <button class="border-0 " v-show="dropdownMenu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Message info</a></li>
+                                        <li><a class="dropdown-item" href="#">Delete message</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="message">{{message.message}}</div>
-                        <div class="date d-flex justify-content-end">{{message.date}}</div>                          
+                        <div class="date d-flex pr-2 justify-content-end">{{message.date}}</div>                          
                     </div>
                 </div>
 
