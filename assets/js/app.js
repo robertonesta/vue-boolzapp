@@ -217,7 +217,16 @@ createApp({
             } else {
                 return ('Chat vuota');
             }
-        }
+        },
+        lastDate(contact) {
+
+            if (contact.messages.length > 0) {
+                return (contact.messages[contact.messages.length - 1].date)
+            } else {
+                return ('');
+            }
+        },
+
 
                 
     },

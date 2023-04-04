@@ -89,12 +89,19 @@ body{
 
 .chat_user{
     display: flex;
+    gap: 10px;
 }
-.chat_user img{
+.userImg img{
     border-radius: 50%;
     max-width: 100%;
     width: 40px;
 }
+
+.userImg{
+    height: 50px;
+    aspect-ratio: 1/1;
+}
+
 .main_right{
     height: 100%;
 }
