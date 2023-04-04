@@ -76,7 +76,7 @@
             </div>
             <div class="main_right px-0 col-8 position-relative">
                 <div class="messages px-5 py-3 d-flex flex-column">
-                    <div class="message" :class="message.status" v-for="message in contacts[activeContact].messages" @click="dropDown_Menu">
+                    <div class="message" :class="message.status" v-for="(message, index) in contacts[activeContact].messages" @click="dropDown_Menu()">
                         <div class="position-relative">
                             <div class="dropdown_menu position-absolute">
                                 <div class="dropdown">
