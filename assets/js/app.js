@@ -180,11 +180,10 @@ createApp({
             this.activeContact = index
         },
         addMessage(){
-            let currentDate = new Date()
-            console.log(currentDate.getDate(), currentDate.getMonth(), currentDate.getFullYear(), currentDate.getHours(), currentDate.getMinutes(), currentDate.getSeconds())
-
-            let newMessage = {
-                date: `${currentDate.getDate()}/${currentDate.getMonth()}/${currentDate.getFullYear()} ${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`,
+            const dt = luxon.DateTime;
+            
+            let newMessage = {                
+                date: `${dt.now().setLocale('it').toLocaleString(dt.DATETIME_SHORT_WITH_SECONDS)}`,
                 message: this.newMessage,
                 status: 'sent'
             }
@@ -192,10 +191,10 @@ createApp({
             this.newMessage = ''
         },
         automaticAnswer(){
-            let currentDate = new Date()
-            console.log(currentDate.getDate(), currentDate.getMonth(), currentDate.getFullYear(), currentDate.getHours(), currentDate.getMinutes(), currentDate.getSeconds())
-            let newMessage = {
-                date: `${currentDate.getDate()}/${currentDate.getMonth()}/${currentDate.getFullYear()} ${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`,
+            const dt = luxon.DateTime;
+            
+            let newMessage = {               
+                date: `${dt.now().setLocale('it').toLocaleString(dt.DATETIME_SHORT_WITH_SECONDS)}`,
                 message: 'D\'accordo',
                 status: 'received'
             }
@@ -208,7 +207,7 @@ createApp({
     computed: {
         searchList() {
             this.contacts.forEach (contact => {
-                if(contact.name.includes(this.nameFilter)){
+                if(contact.name.toLowerCase().includes(this.nameFilter.toLowerCase())){
                     contact.visible = true
                 } else {
                     contact.visible = false
