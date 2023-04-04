@@ -173,6 +173,7 @@ createApp({
             ],
             newMessage: "",
             nameFilter: "",
+            dropdownMenu: false,
         }
     },
     methods: {
@@ -202,6 +203,10 @@ createApp({
                 this.contacts[this.activeContact].messages.push(newMessage);
               }, 3000)
         },
+
+        dropDown_Menu(){
+            this.dropdownMenu = !this.dropdownMenu
+        }
         
     },
     computed: {
