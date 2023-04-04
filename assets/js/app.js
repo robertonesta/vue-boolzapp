@@ -206,8 +206,11 @@ createApp({
 
         dropDown_Menu(){
             this.dropdownMenu = !this.dropdownMenu
+        },
+        deleteMessage(index){            
+            this.contacts[this.activeContact].messages.splice(index, 1)
         }
-        
+                
     },
     computed: {
         searchList() {
